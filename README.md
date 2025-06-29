@@ -37,4 +37,4 @@ By leveraging the lightweight and efficient **MobileNetV2** architecture, the sy
 
 ---
 
-Would you like me to merge this with the rest of the full README? Or generate the rest (`Installation`, `Usage`, etc.) based on this style?
+
