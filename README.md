@@ -10,8 +10,8 @@ By leveraging the lightweight and efficient **MobileNetV2** architecture, the sy
 - 🎥 **Live face detection** using OpenCV’s Haar Cascade classifiers  
 - 🤖 **Mask classification** via a fine-tuned **MobileNetV2** network  
 - 📊 **High Accuracy:**  
-  - **Accuracy:** 98.32%  
-  - **F1-Score:** 0.98 on a test set of 1908 samples  
+  - **Accuracy:** 95.32%  
+  - **F1-Score:** 0.95 on a test set of 2308 samples  
 - 🖼️ **Visual output** with color-coded bounding boxes:  
   - 🟩 Green: With Mask  
   - 🟥 Red: Without Mask  
