@@ -1,40 +1,28 @@
 # 🛡️ Smart Surveillance: Real-Time Face Mask Detection Using MobileNetV2
 
-This project presents a **real-time face mask detection system** powered by deep learning and computer vision.  
-By leveraging the lightweight and efficient **MobileNetV2** architecture, the system accurately identifies whether individuals are wearing face masks using live webcam or video stream input.
+This project implements a **real-time face mask detection system** using deep learning and computer vision.  
+Leveraging the **MobileNetV2** architecture, the system determines whether a person is wearing a face mask or not using live video input from a webcam or video stream.
 
 ---
 
-## 🚀 Features
-
-- 🎥 **Live face detection** using OpenCV’s Haar Cascade classifiers  
-- 🤖 **Mask classification** via a fine-tuned **MobileNetV2** network  
-- 📊 **High Accuracy:**  
-  - **Accuracy:** 95.32%  
-  - **F1-Score:** 0.95 on a test set of 2308 samples  
-- 🖼️ **Visual output** with color-coded bounding boxes:  
-  - 🟩 Green: With Mask  
-  - 🟥 Red: Without Mask  
+##  Features
+- **Real-time face detection** using Haar Cascade classifiers (OpenCV)
+- **Mask classification** using fine-tuned MobileNetV2
+- **Performance:** Accuracy: **98.32%**, F1-Score: **0.98** on 1908 test samples
+- **Output rendering** with color-coded bounding boxes  (Green = Mask, Red = No Mask)
 
 ---
 
-## 🤖 Model Architecture
-
-- **Base Model:** Pre-trained **MobileNetV2** (used as a frozen feature extractor)  
-- **Custom Head:** Fully-connected layers with **ReLU**, **Dropout**, and **Softmax** activation  
-- **Training Enhancements:**  
-  - Data Augmentation (rotation, flip, zoom)  
-  - **Loss Function:** Categorical Cross-Entropy  
-  - **Optimizer:** Adam (`lr=0.001`)  
-  - **Callbacks:** EarlyStopping, Learning Rate Scheduler  
+##  Model Overview
+- **Backbone:** Pre-trained **MobileNetV2** used as a feature extractor
+- **Classification Head:** Custom dense layers with **Dropout** and **ReLU** activation
+- **Training Data:** Augmented dataset containing real-world and synthetic face images
+- **Loss Function:** Categorical Cross-Entropy  
+-  **Optimizer:** Adam (lr = 0.001), with Early Stopping and LR Scheduler
 
 ---
 
-## 📊 Dataset
-
-- [Face Mask Detection Dataset – Kaggle](https://www.kaggle.com/datasets/shiekhburhan/face-mask-dataset?select=FMD_DATASET)  
-- Contains labeled images of faces **with** and **without** masks, in varied real-world settings
+##  Dataset Used
+- [Face Mask Detection Dataset – Kaggle](https://www.kaggle.com/datasets/shiekhburhan/face-mask-dataset?select=FMD_DATASET)
 
 ---
-
-
